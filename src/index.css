@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    background-color: #eef3fa;
+    color: #172b4d;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.monitor-bezel {
+  background: linear-gradient(145deg, #34404d, #101820 62%, #263442);
+  box-shadow: 0 26px 60px rgba(19, 43, 74, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.34);
+}
+
+.monitor-stand-neck {
+  background: linear-gradient(90deg, #aab5c0, #e3e8ed 48%, #9aa7b4);
+  clip-path: polygon(28% 0, 72% 0, 82% 78%, 100% 100%, 0 100%, 18% 78%);
+}
+
+.monitor-stand-base {
+  background: linear-gradient(90deg, #8996a2, #dce2e8 50%, #8794a0);
+}
